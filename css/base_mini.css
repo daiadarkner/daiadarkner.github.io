@@ -1,0 +1,211 @@
+
+@charset "utf-8";
+
+
+
+
+/*============================================
+スクロールしない背景画像
+============================================*/
+.fixed-background {
+    /* 背景画像指定 */
+    background-image: url(../img/sample-image.png);
+
+    min-height: 120vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+.fixed-background-harukasumi {
+    /* 背景画像指定 */
+    background-image: url(../img/Harukasumi.jpg);
+
+    min-height: 50vh;
+    min-width: 50vw;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+/*============================================
+スクロール背景画像
+============================================*/
+  .background {
+    background-color: rgb(255, 255, 255);
+    color:#1d49aa;
+  }
+/*============================================
+TurBoロゴ
+============================================*/
+img#TurBoLogo{
+width: 50%;
+margin-top: 20vw;
+}
+div#logo{
+    /* logoのセンタリング */
+    text-align : center;
+}
+
+
+
+
+
+
+/*============================================
+メニュー
+============================================*/
+
+/* ハンバーガーメニューCSS */
+#humIcon {
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+    box-sizing: border-box;
+
+    position: fixed;
+}
+span {
+    display: block;
+    width: 60px;
+    height: 5px;
+    left: 10px;
+    background: rgb(229, 229, 229);
+    position: absolute;
+    transition: all 0.5s ease;
+}
+.bar1 {
+    top: 12.5px;
+}
+.bar2 {
+    top: 35px;
+}  
+.bar3 {
+   top: 57.5px;
+}
+/* jsによる.open属性の付与のスタイル */
+/*上の線225℃回転*/
+.bar1.open {
+top: 35px;
+transform: rotate(-225deg);
+}
+/*真ん中の線は透明化,回転*/
+.bar2.open { 
+    opacity: 0;
+    transform: rotate(-225deg);
+ }
+/*下の線-315℃回転*/
+.bar3.open {
+top: 35px;
+transform: rotate(-315deg);
+}
+
+/* サイドバーcss */
+.sidebar {
+    width: 50vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -50%;
+    -webkit-transition: .7s;
+    transition: .5;
+    background-color: rgb(39, 38, 75);
+    /* opacity: 0.5; 透過 */
+    padding: 120px 0;
+    display:-webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .sidebar-menu {
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar-item {
+    list-style: none;
+    margin-bottom: 30px;
+  }
+  .sidebar-item div {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+  } 
+  
+
+  .sidebar-item a {
+  min-width: 100px;
+  font-family: inherit;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  /* background: #4676d7; */
+  color: #fff;
+  padding: 8px 48px;
+  font-size: 125%;
+  cursor: pointer;
+  text-decoration: none;
+}
+ 
+.sidebar-item a:hover {
+  color: #ffcd29;
+}
+ 
+.sidebar-item a:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+
+/*============================================
+全般
+============================================*/
+*{
+    margin: 0; padding: 0; 	/*全要素のマージン・パディングをリセット*/   
+}
+body {
+	/* background-color: rgb(45, 32, 106);	ページ全体の背景色 */
+	font-size: 100%;			/* フォントサイズ */
+	font-family: 'Noto Sans JP', sans-serif; 	/* フォントの種類:google font */
+	line-height:1.5; 			/* 行の高さを1.5倍にする */
+	color:#1d49aa;    
+}
+/*============================================
+見出し
+============================================*/
+div#midashi {
+    margin: 10vw 0 10vw 0;
+    font-size: 300%;
+    /* padding: 0px 0px 0px 5px; */
+    text-align: center; 
+}
+
+h1 {
+    text-align: center;
+    border-bottom: solid 1px ;
+    padding: 0 2vw 4vw 2vw;
+    margin: 0 20vw;
+}
+
+h2 {
+    margin: 40px 20px 20px 20px;
+    padding: 0px 0px 0px 6px;
+    border-bottom: 1px solid ;
+    border-color: rgb(255, 255, 255);
+    text-align: center;
+}
+p {
+    margin: 20px;
+    text-align: center;
+ }
+/*============================================
+フッター
+============================================*/
+div#footer {
+    margin: 300px;
+}
