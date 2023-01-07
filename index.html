@@ -7,15 +7,27 @@
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
     </style>
 
-
     <meta charset="UTF-8"><!--変換コード-->
     <meta name="keywords" content="Turbo Music"><!--検索語句の指定-->
 
     <!--レスポンシブデザイン（PCとスマートフォンでの表示の切り替え）-->
+    <script type="text/javascript">
+        // iPhone iPad iPod Android の判別
+        if (
+          navigator.userAgent.indexOf('iPhone') > 0 ||
+          navigator.userAgent.indexOf('iPad') > 0 ||
+          navigator.userAgent.indexOf('iPod') > 0 ||
+          navigator.userAgent.indexOf('Android') > 0 )
+        {
+          document.getElementById(`innerhtml`).innerHTML = '<link rel="stylesheet" type="text/css" href="css/base_mini.css">';
+        } else {
+          document.getElementById(`innerhtml`).innerHTML = '<link rel="stylesheet" type="text/css" href=“css/base.css">';
+        }
+      </script>
+
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" media="screen and (min-width:800px)" href="css/base.css">
     <link rel="stylesheet" media="screen and (max-width:800px)" href="css/base_mini.css">
-
 
     <title>TurBo - Home</title>
 </head>
