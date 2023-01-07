@@ -106,7 +106,7 @@ transform: rotate(-315deg);
     height: 100%;
     position: fixed;
     top: 0;
-    left: -30%;
+    left: -25%;
     -webkit-transition: .7s;
     transition: .5;
     background-color: rgb(39, 38, 75);
