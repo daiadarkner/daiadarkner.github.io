@@ -12,6 +12,7 @@
 
     <!--レスポンシブデザイン（PCとスマートフォンでの表示の切り替え）-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" id="style" href="css/base.css">
     <script type="text/javascript">
         // iPhone iPad iPod Android の判別
         if (
@@ -20,12 +21,12 @@
           navigator.userAgent.indexOf('iPod') > 0 ||
           navigator.userAgent.indexOf('Android') > 0 )
         {
-          document.getElementById(`innerhtml`).innerHTML = '<link rel="stylesheet" type="text/css" href="css/base_mini.css">';
+          document.getElementById(`style`).setAttribute("href","css/base_mini.css")
         } else {
-          document.getElementById(`innerhtml`).innerHTML = '<link rel="stylesheet" type="text/css" href=“css/base.css">';
+          document.getElementById(`style`).setAttribute("href","css/base_mini.css")
         }
-      </script>
-      <div id="innerhtml"></div>
+    </script>
+
 
     <!-- <link rel="stylesheet" media="screen and (min-width:800px)" href="css/base.css"> -->
     <!-- <link rel="stylesheet" media="screen and (max-width:800px)" href="css/base_mini.css"> -->
