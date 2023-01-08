@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* TurBoロゴ */
+img#TurBoLogo{
+    width: 30%;
+    }
+  div#logo{
+      /* logoのセンタリング */
+      text-align : center;
+      color: white;
+      padding: 10vh 2vh 0vh 2vh;
+  }
+
+
+body {
+    color:white; 
+    }
