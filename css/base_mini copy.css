@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*============================================
-背景画像
+背景
 ============================================*/
 /* スクロールしない */
 .fixed-background {
@@ -9,7 +9,7 @@
   min-height: 50vh;
   min-width: 50vw;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-position: center;
 }
@@ -27,6 +27,7 @@
     /* 背景画像指定 */
     background-image: url(../img/TurboLogoBackground.gif);
     margin: 0 10vw 0 10vw ;
+    color: white;
   }
 
 /* スクロール背景画像 */
@@ -36,20 +37,23 @@
   }
 
 
+
+
 /*============================================
 見出し
 ============================================*/
+
 /* TurBoロゴ */
 img#TurBoLogo{
-  width: 50%;
+  width: 60%;
   }
-div#logo{
-    /* logoのセンタリング */
-    text-align : center;
-    font-size: 4vw;
-    color: white;
-    padding: 35vh 0 50vh 0;
-}
+  div#logo{
+      /* logoのセンタリング */
+      text-align : center;
+      font-size: 4vw;
+      color: white;
+      padding: 40vh 0 50vh 0;
+  }
 
 h1 {
     text-align: center;
@@ -59,27 +63,23 @@ h1 {
 }
 
 h2 {
-    color: #ffe07b;
-    margin: 15vh 20vw 10vh 20vw;
-    text-align: center;
-}
-h3 {
-  margin: 10vh 20vw 5vh 20vw;
+  color: #ffe07b;
+  margin: 15vh 20vw 10vh 20vw;
   text-align: center;
 }
+h3 {
+margin: 10vh 20vw 5vh 20vw;
+text-align: center;
+}
 p {
-    font-size: 18px;
-    margin: 4vh 20vw;
-    text-align: center;
- }
-a {
-  text-decoration: none; 
-  color:#100167;
+  font-size: 18px;
+  margin: 4vh 10vw;
+  text-align: center;
 }
 
-.center {
-
-
+ a {
+  text-decoration: none; 
+  color:#100167;
 }
  /*============================================
 全般
@@ -92,26 +92,25 @@ body {
 font-size: 100%;			/* フォントサイズ */
 font-family: 'Noto Sans JP', sans-serif; 	/* フォントの種類:google font */
 line-height:1.5; 			/* 行の高さを1.5倍にする */
-color:#100167; 
-text-decoration: none;   
+color:#100167;    
 }
-
-/* フッター */
+/*フッター*/
 div#footer {
-  text-align: center; 
+  text-align: center;
   padding: 20vh 0 4vh 0;
 }
 
 /*============================================
 メニュー
 ============================================*/
-
 /* ハンバーガーメニューCSS */
 #humIcon {
   width: 100px;
   height: 100px;
+
   position: relative;
   box-sizing: border-box;
+
   position: fixed;
 }
 span {
@@ -151,11 +150,11 @@ transform: rotate(-315deg);
 
 /* サイドバーcss */
 .sidebar {
-  width: 25vw;
+  width: 50vw;
   height: 100%;
   position: fixed;
   top: 0;
-  left: -25%;
+  left: -50%;
   -webkit-transition: .7s;
   transition: .5;
   background-color: rgb(39, 38, 75);
@@ -166,6 +165,7 @@ transform: rotate(-315deg);
   -webkit-box-pack: center;
   justify-content: center;
 }
+
 
 .sidebar.open {
   left: 0;
@@ -197,6 +197,7 @@ color: #fff;
 padding: 8px 48px;
 font-size: 125%;
 cursor: pointer;
+text-decoration: none;
 }
 
 .sidebar-item a:hover {
@@ -207,4 +208,3 @@ color: #ffcd29;
 outline: none;
 box-shadow: 0 0 0 4px #cbd6ee;
 }
-
