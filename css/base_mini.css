@@ -13,22 +13,26 @@
 
 /* TurBoロゴ */
 img#TurBoLogo{
-  width: 360%;
+  width: 60%;
   }
 div#logo{
   padding: 40vh 0 50vh 0;
 }
 
-p {
-  margin: 4vh 10vw;
-}
-
  /*============================================
 全般
 ============================================*/
+p {
+  margin: 4vh 10vw;
+}
 /*フッター*/
 div#footer {
   text-align: center;
   padding: 20vh 0 4vh 0;
 }
 
+/* サイドバーcss */
+.sidebar {
+  width: 50vw;
+  left: -50%;
+}
