@@ -32,7 +32,7 @@
 /* スクロール背景画像 */
   .background {
     background-color: rgb(255, 255, 255);
-    color:#1d49aa;
+    color:#100167;
   }
 
 
@@ -69,6 +69,7 @@ p {
  }
 a {
   text-decoration: none; 
+  color:#100167;
 }
 
 .center {
