@@ -46,15 +46,15 @@ img#TurBoLogo{
 div#logo{
     /* logoのセンタリング */
     text-align : center;
-    font-size: 200%;
+    font-size: 4vw;
     color: white;
-    padding: 20vw 0 20vw 0;
+    padding: 35vh 0 50vh 0;
 }
 
 h1 {
     text-align: center;
     border-bottom: solid 1px ;
-    padding: 4vw 2vw 4vw 2vw;
+    padding: 8vh 2vw 8vh 2vw;
     margin: 0 20vw;
 }
 
